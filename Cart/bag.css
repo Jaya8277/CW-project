@@ -1,0 +1,154 @@
+       .body{
+           padding: 30px;
+       }
+        .heading {
+            font-family: tahoma;
+            font-size: 36px;
+        }
+        .bar{
+            height: 40px;;
+            width: 100%;
+            background-color: #2E3337;
+            color: white;
+            margin: auto;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .p {
+            font-family: tahoma;
+            font-size: 14px;
+            color:#267ba5;
+            border: 1px solid  lightblue;
+            margin: 10px;
+            background-color: #f2f9ff;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .p1{
+           font-family: tahoma;
+            font-size: 14px;
+            color:#267ba5;
+            border: 1px solid  lightblue;
+            margin: 10px;
+            background-color: #f2f9ff;
+            font-weight: bold;
+            padding: 10px;
+
+        }
+
+        .box1 {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .btn1 {
+            background-color: #2E3337;
+            color: wheat;
+            font: bold;
+            margin: 20px;
+            font-size: 20px;
+            height: 50px;
+
+        }
+
+        .btn1:hover {
+            cursor: pointer;
+            color: white;
+        }
+
+        .a>img {
+            height: 100px;
+            width: 100px;
+
+        }
+
+        .a {
+            width: 100%;
+            display: flex;
+            margin: 10px;
+            background-color: white;
+            opacity: 40%;
+
+        }
+
+        #box3 {
+            width:40%;
+            pointer-events: none;
+            /* opacity: 50%; */
+            background-color: #f2f2f2;
+            padding: 10px;
+            height: 60%;
+        }
+
+        .total {
+            display: flex;
+            /* justify-content: space-between; */
+            justify-content: space-around;
+            
+        }
+
+        .coupon {
+            /* background-color: #2E3337; */
+            margin-left: 30%;
+                    
+        
+        }
+        .coupon>input{
+            height: 40px;
+            width:50%;
+            font-size: large;
+        }
+        .coupon>button{
+            height: 44px;
+            
+        }
+        .btns{
+            color:white;
+            display: flex;
+            justify-content: space-between;
+        }
+        .pay{
+            display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+        }
+        .pay>svg{
+            cursor: pointer;
+            margin: 10px;
+            padding: 10px;
+        }
+            
+    
+
+
+
+
+
+
+
+
+
+        @media (min-width: 500px) and (max-width: 1050px) {
+
+            .container{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+        }
+        
+
+         }
+
+         #flex{
+             display: flex;
+             margin: 5px;
+         }
+/* tbody>tr>th{ */
+    /* margin: ; */
+/* } */
