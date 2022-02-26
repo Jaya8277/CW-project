@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SELFCARE</title>
+
+    <style>
+      body {
+        background-color: white;
+      }
+      .productDescription {
+        width: 60%;
+        height: auto;
+        margin-left: 70px;
+        justify-content: start;
+        margin-bottom: 50px;
+      }
+
+      h1 {
+        color: #2e3337;
+        font-size: 42px;
+        font-family: lato-light;
+      }
+      .productDescription > p {
+        color: grey;
+        margin-left: 0;
+      }
+      #more {
+        display: none;
+      }
+      button {
+        width: 100%;
+        height: 38px;
+        border: 2px solid black;
+        display: inline-block;
+        background-color: white;
+        color: #808080;
+        margin-top: 20px;
+        text-align: left;
+        text-decoration: underline;
+      }
+      .line {
+        width: 90%;
+        margin: auto;
+        height: 1px;
+        background-color: grey;
+        margin-bottom: 10px;
+      }
+      #container {
+        width: 90%;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+        margin: auto;
+        height: auto;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin: 30px auto 30px auto;
+      }
+      #container > li {
+        display: flex;
+        height: 25px;
+        border: 1px solid grey;
+        padding: 10px;
+        justify-content: space-between;
+      }
+      img {
+        height: 15px;
+        width: 15px;
+      }
+      #container > li a {
+        text-decoration: none;
+        color: grey;
+        line-height: none;
+      }
+
+      #container > li:hover {
+        background-color: lightgrey;
+        border-radius: 3px;
+      }
+      .submenu {
+        display: none;
+      }
+      .submenu button {
+        border: 5px solid red;
+        background-color: green;
+        color: grey;
+        font-size: 16px;
+        padding-left: 0px;
+      }
+      #container > li:hover .submenu {
+        display: block;
+        position: absolute;
+        margin-top: 25px;
+        margin-left: -11px;
+        background-color: white;
+        border: 1px solid grey;
+        box-shadow: 0 0 0 0.1px grey, 10px 10px 50px 10px rgba(0, 0, 0, 0.1);
+      }
+      #container > li:nth-child(6):hover .submenu {
+        margin-left: -106px;
+      }
+      #container > li:nth-child(12):hover .submenu {
+        margin-left: -117px;
+      }
+      #container > li:nth-child(2) {
+        padding: 0px;
+      }
+      .submenu li {
+        margin: 20px;
+        list-style: none;
+        margin-left: 0;
+        color: gray;
+      }
+
+      .submenu-2 {
+        height: 400px;
+        overflow: scroll;
+      }
+      .submenu-1 > ul > li {
+        border: 1px solid grey;
+        padding: 10px;
+        width: 200px;
+      }
+      ::-webkit-scrollbar {
+        width: 10px;
+        height: 0;
+      }
+      ::-webkit-scrollbar-track {
+        background: lightgrey;
+        border-radius: 25px;
+        margin-block: 17px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: grey;
+        border-radius: 25px;
+      }
+      #productDisplay {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        width: 90%;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 20px;
+      }
+
+      #productDisplay > div > div {
+        height: 350px;
+      }
+      #productDisplay > div > div > p + p {
+        color: #2e3337;
+        font-size: 21px;
+        font-weight: bold;
+      }
+      #productDisplay > div > button {
+        width: 90%;
+        margin: 10px;
+        color: gray;
+        padding: 10px;
+        background-color: #333333;
+      }
+      #productDisplay img {
+        width: 235px;
+        height: 235px;
+      }
+      p {
+        margin: 10px;
+      }
+      input {
+        width: 100%;
+        padding: 0px;
+        border: 1px solid grey;
+        color: grey;
+        font-size: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="productDescription">
+      <h1>Self Care</h1>
+      <p>178 results</p>
+
+      <p>
+        Helping women feel unapologetically confident, empowered, and beautiful, our self-care category is the ultimate destination for good vibes and self-love on SkinStore. Feel free to indulge in face masks, bath bombs, sexual wellness products and more to fulfill all needs your body may have. Find the
+         perfect product for your personal wellness today!
+        
+      </p>
+     
+    </div>
+
+    <div class="line"></div>
+
+    <div id="container">
+      <li>
+        <span> <a href="#"> Sort by </a> </span>
+        <span
+          ><a href="#"><img src="down-arrow.png" alt="" /></a
+        ></span>
+        <div class="submenu">
+          <ul>
+            <li sort="lth" onclick="sortAscending()" class="sort">
+              price low to high
+            </li>
+            <li sort="htl" onclick="sortDescending()" class="sort">
+              price hight to low
+            </li>
+            <li sort="popularity">popularity</li>
+          </ul>
+        </div>
+      </li>
+
+      <input id="search" onkeyup="search()" />
+      <li>
+        <span> <a href="#">Category </a> </span>
+        <span
+          ><a href="#"><img src="down-arrow.png" alt="" /></a
+        ></span>
+        <div class="submenu submenu-1">
+          <ul>
+            <li>Hair Preparation</li>
+            <li>Hair styling</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span> <a href="#">Brand</a> </span>
+        <span
+          ><a href="#"><img src="down-arrow.png" alt="" /></a
+        ></span>
+        <div class="submenu submenu-1 submenu-2">
+          <ul>
+            <li>Afro-Caribbean</li>
+            <li>Braided</li>
+            <li>Colored</li>
+            <li>Curly & Wavy</li>
+            <li>Damaged</li>
+            <li>Dry</li>
+            <li>Fine</li>
+            <li>Frizzy</li>
+            <li>Graying</li>
+            <li>Long</li>
+            <li>Normal</li>
+            <li>Oily</li>
+            <li>Thick</li>
+            <li>Thinning</li>
+            <li>Weakened</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span> <a href="#">Screen care products </a> </span>
+        <span
+          ><a href="#"><img src="down-arrow.png" alt="" /></a
+        ></span>
+        <div class="submenu submenu-1">
+          <ul>
+            <li>Shampoo</li>
+            <li>Conditioner</li>
+            <li>Dry Shampoo</li>
+            <li>Hair & Scalp Treatments</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span> <a href="#">Make -up Products</a> </span>
+        <span
+          ><a href="#"><img src="down-arrow.png" alt="" /></a
+        ></span>
+        <div class="submenu submenu-1">
+          <ul>
+            <li>Curl Enhancers</li>
+            <li>Hair Cream</li>
+            <li>Hair Gel</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span> <a href="#">Hair Products</a> </span>
+        <span
+          ><a href="#"><img src="down-arrow.png" alt="" /></a
+        ></span>
+        <div class="submenu submenu-1">
+          <ul>
+            <li>Anti-Frizz</li>
+            <li>Color Protection</li>
+            <li>Damage Repair</li>
+            <li>Hydrating</li>
+            <li>Volumizing</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span> <a href="#">Range</a> </span>
+        <span
+          ><a href="#"><img src="down-arrow.png" alt="" /></a
+        ></span>
+        <div class="submenu submenu-1">
+          <ul>
+            <li>Karaite</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span> <a href="#"> Price</a> </span>
+        <span
+          ><a href="#"><img src="down-arrow.png" alt="" /></a
+        ></span>
+        <div class="submenu sub submenu-1">
+          <ul>
+            <li>price low to high</li>
+            <li>price hight to low</li>
+          </ul>
+        </div>
+      </li>
+    </div>
+    <div class="line"></div>
+    <div id="productDisplay"></div>
+  </body>
+</html>
+
+<script>
+  function myFunction() {
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+    console.log(more.style.display);
+
+    if (moreText.style.display === "none") {
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    } else {
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    }
+  }
+</script>
+
+<script>
+  var productdata = [
+    {
+      img_url:
+        "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12430664-1344730037613968.jpg",
+      name: "Olaplex No. 4P Blonde Enhancer Toning Shampoo 250ml",
+      price: "20",
+    },
+    {
+      img_url:
+        "https://static.thcdn.com/images/xsmall/webp//productimg/original/11288832-4014904689433331.jpg",
+      name: "Olaplex No.4 Bond Maintenance Shampoo 8.5 oz",
+      price: "28",
+    },
+    {
+      img_url:
+        "https://static.thcdn.com/images/xsmall/webp//productimg/original/11288826-7974904688824169.jpg",
+      name: "NEST New York Moroccan Amber Reed Diffuser 175ml",
+      price: "28",
+    },
+    {
+      img_url:
+        "https://static.thcdn.com/images/xsmall/webp//productimg/original/10365803-2354897189360716.jpg",
+      name: "Eve Lom Rescue Mask (3.5oz)",
+      price: "74",
+    },
+    {
+      img_url:
+        "https://static.thcdn.com/images/xsmall/webp//productimg/original/10881881-1414931144155266.jpg",
+      name: "SILKE Hair Wrap The Sofia - Champagne",
+      price: "13",
+    },
+    {
+      img_url:
+        "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/11686841-2044558202894544.jpg ",
+      name: "Molton Brown Orange & Bergamot Bath and Shower Gel",
+      price: "30",
+    },
+    {
+      img_url:
+        "https://static.thcdn.com/images/xsmall/webp//productimg/original/11293891-1374902414596874.jpg ",
+      name: "AHAVA Natural Dead Sea Bath Salts",
+      price: "52",
+    },
+    {
+      img_url:
+        "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/12299808-2864708783322916.jpg",
+      name: "Daily Concepts Daily Mini Facial Scrubber 4g",
+      price: "36",
+    },
+    {
+      img_url:
+        "https://static.thcdn.com/images/xsmall/webp//productimg/original/12430661-1344871029686885.jpg",
+      name: "Daily Concepts Daily Mini Facial Scrubber 4g",
+      price: "52",
+    },
+    {
+      img_url:
+        "https://static.thcdn.com/images/xsmall/webp//productimg/original/11288824-4484904688433125.jpg",
+      name: "AHAVA Natural Dead Sea Bath Salts",
+      price: "13",
+    },
+    {
+      img_url:
+        "https://static.thcdn.com/images/xsmall/webp//productimg/original/12635437-1314911951568611.jpg",
+      name: "Molton Brown Orange & Bergamot Bath and Shower Gel",
+      price: "29",
+    },
+    {
+      img_url:
+        "https://static.thcdn.com/images/xsmall/webp//productimg/original/12564808-1014935531447783.jpg",
+      name: "NEST New York Grapefruit Reed Diffuser 175ml",
+      price: "14",
+    },
+    {
+      img_url:
+        "https://static.thcdn.com/images/xsmall/webp//productimg/original/12219484-1344893251812905.jpg",
+      name: "",
+      price: "29",
+    },
+    {
+      img_url:
+        "https://static.thcdn.com/images/xsmall/webp//productimg/original/10970368-2144928009558577.jpg",
+      name: "Wander Beauty Baggage Claim Eye Masks (Pack of 6) - Gold",
+      price: "104",
+    },
+    {
+      img_url:
+        "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/12194100-6254684671027537.jpg",
+      name: "STARSKIN 100% Camellia Nourishing and Brightening 2-Step Oil Sheet Mask",
+      price: "17",
+    },
+    {
+      img_url:
+        "https://static.thcdn.com/images/xsmall/webp//productimg/original/11289620-7944870985540829.jpg",
+      name: "SkinCeuticals Hydrating B5 Mask",
+      price: "56",
+    },
+    {
+      img_url:
+        "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12708864-2064813249557915.jpg",
+      name: "Miriam Quevedo Black Baccara Hair Multiplying Shampoo 250ml",
+      price: "37",
+    },
+  ];
+
+  displayShampooData(productdata);
+
+  function displayShampooData(productdata) {
+    document.querySelector("#productDisplay").innerHTML = "";
+    productdata.map(function (elem) {
+      var mainDiv = document.createElement("div");
+
+      var img = document.createElement("img");
+
+      img.setAttribute("src", elem.img_url);
+
+      var name = document.createElement("p");
+      name.innerText = elem.name;
+
+      var price = document.createElement("p");
+      price.innerText = "$" + elem.price;
+
+      var innerDiv = document.createElement("div");
+      innerDiv.append(img, name, price);
+
+      var button = document.createElement("button");
+      button.innerText = "QUICK BUY";
+
+      mainDiv.append(innerDiv, button);
+
+      document.querySelector("#productDisplay").append(mainDiv);
+    });
+  }
+</script>
+<script>
+  var list = document.querySelector(".submenu >ul>li");
+
+  function sortAscending() {
+    var list = document.querySelectorAll(".sort");
+    list[1].style.color = "";
+    list[1].style.fontWeight = "";
+    list[0].style.color = "black";
+    list[0].style.fontWeight = "bold";
+    if (list[0].attributes[0].value == "lth") {
+      shampooData.sort(function (a, b) {
+        return a.price - b.price;
+      });
+      displayShampooData(shampooData);
+      // document.getElementById("items").textContent = mensData.length;
+    }
+  }
+
+  function sortDescending() {
+    var list = document.querySelectorAll(".sort");
+    list[0].style.color = "";
+    list[0].style.fontWeight = "";
+    list[1].style.color = "black";
+    list[1].style.fontWeight = "bold";
+
+    if (list[1].attributes[0].value == "htl") {
+      shampooData.sort(function (a, b) {
+        return b.price - a.price;
+      });
+      displayShampooData(shampooData);
+    }
+  }
+
+  function search() {
+    var searchText = document.getElementById("search").value.toLowerCase();
+    console.log(searchText);
+    var filterData = shampooData.filter(function (item) {
+      var elem = item.name.toLowerCase();
+      return elem.includes(searchText);
+    });
+    displayShampooData(filterData);
+  }
+</script>
+
+<script></script>
