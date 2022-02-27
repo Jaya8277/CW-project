@@ -1,0 +1,399 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="stylehomepage.css">
+  <script src="https://kit.fontawesome.com/560a1302ef.js" crossorigin="anonymous"></script>
+  </head>
+  <style>
+    
+
+
+
+   
+
+      
+     
+  </style>
+
+<body>
+  <!-- slider data -->
+  <div class="slidercontainer"> 
+        
+    <div class="showSlide fade">  
+        <img src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/33/0128-STDCRE-30607-WC-SS-Feb-Batching-Shot-04-1180x450-070133.jpg" />  
+        
+        <div class="content2"> <img src="images/your name.webp" >
+
+        </div> 
+        <div class="swap2">
+           A shade with every skin tone in mind-- shop our makeup collection for your best base.
+        <div class="btn">
+      <button >SHOP NOW</button>
+      </div>
+        </div>  
+       
+    </div> 
+
+       <div class="showSlide fade">  
+            <img src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/01/0128-STDCRE-30607-WC-SS-Feb-Batching-Shot-05-1180x450-065001.jpg" />  
+            
+            <div class="content2"> <img src="images/sk.webp"/> 
+
+            </div> 
+            <div class="swap2">
+               The  countdown is on! save upto 30% off your order with code COUNTDOWN but be quick! Discount drops  1% every 3 Hours.Plus, recieve an Alpha-H 5-piece Set(worth $114) with                      any purchase of $130 or more
+            <div class="btn">
+          <button >SHOP NOW</button>
+          </div>
+            </div>  
+           
+        </div> 
+        <!-- <div class="showSlide fade"> 
+        
+        <img src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/16/0128-STDCRE-30607-WC-SS-Feb-Batching-Shot-05-1180x450-070716.jpg" />  
+     
+    </div>  -->
+        <!-- <div class="content">Slide2 heading</div>   -->
+      
+        
+    <div class="showSlide fade">  
+        <img src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/30/0128-STDCRE-30607-LD_Skinstore_February_Photography_2022_Batching_Shot15-1180x450-022930.jpg" />  
+        
+        <div class="content"> <img src="images/Sulwasoo.webp"/> 
+
+        </div> 
+        <div class="swap">
+            NEW IN: Sulwhasoo formulates innovative holistic skincare by infusing wisdom with modern science for timeless beauty with a health radiance.
+        <div class="btn">
+      <button >SHOP NOW</button>
+      </div>
+        </div>  
+       
+    </div> 
+
+   
+    
+    <!-- Navigation arrows -->  
+    <a class="left" onclick="nextSlide(-1)">❮</a>  
+    <a class="right" onclick="nextSlide(1)">❯</a>  
+</div>  
+
+
+<div id="logocontainer">
+    <div  id="div1"> <img src="http://127.0.0.1:5500/images/skinCe.webp"></div>
+    <div  id="div2"><img src="https://static.thcdn.com/images/small/webp/widgets/121-us/18/original-logo-1024x383-035229-063318.png"></div>
+    <div  id="div3"><img src="https://static.thcdn.com/images/small/webp/widgets/121-us/11/SWS-logo-black-100619-040211.png"></div>
+    <div  id="div4"><img src="https://static.thcdn.com/images/small/webp/widgets/121-us/46/original-NF_Skinstore_Banner_Logo_Color_320x140-01-011402-010546.png"></div>
+    <div  id="div5"><img src="https://static.thcdn.com/images/small/webp/widgets/121-us/58/original-eltamd-logo-color-hut-grp-045929-124658.png"></div>
+    <div  id="div6"><img src="https://static.thcdn.com/images/small/webp/widgets/121-us/37/original-pca-logo-1024x414-010955-040237.png"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
+  <div id="container">
+    <div class ="sk2">
+    
+      <div class="sk1">
+           <p>Trending Offers</p>
+        <div class ="sk">
+
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+  <div id="container2">
+
+    <div class="child2">
+    
+      <div class ="child1">
+      <h1>What People Are Buying Right Now</h1>
+        <div class="child">
+
+        </div>
+      </div>
+    </div>
+          <!-- <div>
+            swapnil
+          </div> -->
+  </div>
+      <div id="heading">
+        <h1>Over On the Blog...</h1>
+
+      </div>
+
+  <div id="container3">
+    
+    
+    </div>
+</body>
+</html>
+<script>
+
+  // sliderscript
+
+  var slide_index = 1;  
+        displaySlides(slide_index);  
+  
+        function nextSlide(n) {  
+            displaySlides(slide_index += n);  
+        }  
+  
+        function currentSlide(n) {  
+            displaySlides(slide_index = n);  
+        }  
+  
+        function displaySlides(n) {  
+            var i;  
+            var slides = document.getElementsByClassName("showSlide");  
+            if (n > slides.length) { slide_index = 1 }  
+            if (n < 1) { slide_index = slides.length }  
+            for (i = 0; i < slides.length; i++) {  
+                slides[i].style.display = "none";  
+            }  
+            slides[slide_index - 1].style.display = "block";  
+        }  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  var Arr1=[
+    {name:"New:SkinCeuticals Phyto A+ Brightening Treatment",
+   img:  "https://static.thcdn.com/images/small/webp/widgets/121-us/31/original-1224-STDCRE-28425-WC-SS-SkinStore-January-Photography-2022-BATCHING_Shot17-500x500-033131.jpg",
+
+    para:"New:SkinCeuticals Phyto A+ Brightening Treatment. Plus. Receive a free SkinCeuticals Tripeptide RNeck Repair 4ml (worth $10) when you spend $150+ on the brand.",
+    btn:"SHOP NOW"
+    },
+    {name:"25% off Grow Gorgeous +Gift",
+    img:"https://static.thcdn.com/images/small/webp/widgets/121-us/25/GG_Sq-122835-033225.jpg",
+    para:"Enjoy 25% off Grow Gorgeous Detoxifying Scalp Scrub When you spend $60 or more on the brand",
+    btn:"SHOP NOW"
+    },
+    {name:"20% off Tripollar",
+    img:"https://static.thcdn.com/images/small/webp/widgets/121-us/17/81774471_1031146270602617_6895244509883383962_n%281%29-024117.jpg",
+    para:"TriPollar is one of the world's leading Home-use beauty device brands,with years of professional experience and worldwide success. Shop and enjoy 20%off.",
+    btn:"SHOP NOW"
+    },
+    {name:"25% off NEST New York",
+    img:"https://static.thcdn.com/images/small/webp/widgets/121-us/17/0623-STDCRE-17113-SS--BME-SkinStore-Summer-Commercial-Campaign-Photography-July-BATCHING-Shot_31-500x500-011614-033817.jpg",
+    para:"Founded in New York City.Nest Fragrance are famously known for their luscious and captivating scents.Shop and enjoy 25% off. ",
+    btn:"SHOP NOW"
+    },
+    {name:"25% off Perricone MD",
+    img:"https://static.thcdn.com/images/small/webp/widgets/121-us/05/Cold_Plasma_Plus_Franchise_Stylized-033905.jpg",
+    para:"Discount will automatically apply at the cart Perricone MD is a cosmeceutical line that helps to repair skin damage using nutrient antoxidants",
+    btn:"SHOP NOW"
+    },
+    {name:"25% off NeoStrata",
+    img:"https://static.thcdn.com/images/small/webp/widgets/121-us/49/original-original-original-Untitled_design_%28100%29-093749-095250-034149.png",
+    para:"NEOSTRATA professional skin care products are recommended by Dermatologist and Plastic Surgeons in over 42 countries and are the #1 recommended professional AHA skin care brand by physicians worlwide. Shop and enjoy 25% off.",
+    btn:"SHOP NOW"
+    },
+    {name:"30% off Neocutis",
+    img:"https://static.thcdn.com/images/small/webp/widgets/121-us/25/original-original-neo_sq-033134-045825.jpg",
+    para:"Discount will automatically apply at the cart.Neocutis means 'new skin',and that precisely what the products in their collection can create a new,youthful complexion that is visibly smoother and firmer to the touch.",
+    btn:"SHOP NOW"
+    },
+    {name:"25% off Christophe Robin + Gift",
+    img:"https://static.thcdn.com/images/small/webp/widgets/121-us/37/STDCRE-13898-CR-ST-Single-Product-Range-KV-Shot16-600x600-EMAIL-014311-035037.png",
+    para:"Receive a Christophe Robin Cleansing Volumizing Deluxe Paste 12ml (Free Gift) when you spend $80 or more.Plus,enjoy 25% off the brand.",
+    btn:"SHOP NOW"
+    },
+    {name:"Brand of the Month:Medik8",
+    img:"https://static.thcdn.com/images/small/webp/widgets/121-us/36/0128-STDCRE-30607-LD_Skinstore_February_Photography_2022_Batching_Shot18-600x600-050436.jpg",
+    para:"Medik8's ultimate mission is to help everyone achieve Beautiful Skin for Life Plus,receive a Medik8 Try Me Intelligent Rational 3TR Serum when you spend $85 or more on the brand",
+    btn:"SHOP NOW"
+    },
+  ];
+   console.log(Arr1);
+ var Arr2=[
+    
+      { 
+    img:"https://static.thcdn.com/images/large/webp//productimg/300/300/13516546-2844930071318699.jpg",
+  
+  para:"SkinCeuticals Phyto A+ Brightening Treatment 3 oz",
+  price:"$105.00",
+  
+    btn:"SHOP NOW"
+    },
+    { 
+    img:"https://static.thcdn.com/images/large/webp//productimg/300/300/11927426-2014713645552216.jpg",
+  
+  para:"Grow Gorgeous Density Serum Intense 60ml",
+  price:"$105.00",
+  
+    btn:"SHOP NOW"
+    },
+    { 
+    img:"https://static.thcdn.com/images/large/webp//productimg/300/300/13305192-3694931098502193.jpg",
+  
+  para:"Sulwhasoo First Care Activating Serum 60ml",
+  price:"$105.00",
+  
+    btn:"SHOP NOW"
+    },
+    { 
+    img:"https://static.thcdn.com/images/large/webp//productimg/300/300/12810724-3094862237321775.jpg",
+  
+  para:"Medika Crystal Retinal 3 Serum  density 30ml",
+  price:"$105.00",
+  
+    btn:"SHOP NOW"
+    },
+  ];
+  console.log(Arr2);
+
+  var Arr3=[
+    {name:"How to Protect Your Skin This Winter",
+   img:  "https://static.thcdn.com/images/small/webp/widgets/121-us/00/original-pexels-kristin-vogt-54204-1_16-025300.jpg",
+
+    para:"To help you in your search for the best skincare for dry skin in winter, we've curated a list of the best products to combat dry skin.",
+    btn:"SHOP NOW"
+    },
+    {name:"Medik8: The Ultimate Nighttime Routine",
+    img:"https://static.thcdn.com/images/small/webp/widgets/121-us/24/0128-STDCRE-30607-LD_Skinstore_February_Photography_2022_Batching_Shot17-600x600-050524.jpg",
+    para:"It can be hard to curate a go-to nighttime skincare routine, especially when you don't know where to start. Thankfully, with products carefully curated by their in-house experts, Medik8 is there for your skin overnight with unwavering, visible results.",
+    btn:"SHOP NOW"
+    },
+    {name:"Winter Skincare Routine",
+    img:"https://static.thcdn.com/images/small/webp/widgets/121-us/36/original-Untitled_design_-_2021-11-10T153711.183-083736.png",
+    para:"We're on hand to provide you with the very best products to keep your skin in optimum condition all season long.",
+    btn:"SHOP NOW"
+    },
+
+];
+ console.log(Arr3);
+
+
+Arr1.map(function(ele,ind,arr)
+{
+  var div=document.createElement("div")
+  div.setAttribute("id","main")
+
+  var img=document.createElement("img")
+  img.setAttribute("src",ele.img)
+  img.setAttribute("id","imgs")
+  var name=document.createElement("h4")
+  
+  name.innerText=ele.name;
+  var para=document.createElement("p")
+  para.innerText=ele.para;
+  var btn=document.createElement("button")
+   btn.innerText=ele.btn;
+
+ 
+  div.append(img,name,para,btn)
+  //  sk.append(div)
+  document.querySelector(".sk").append(div)
+
+ 
+});
+
+Arr2.map(function(ele,ind,arr)
+{
+  var div=document.createElement("div")
+  
+  // var newdiv=document.createElement("h1");
+  //    newdiv.innerText=ele.newdiv;
+  div.setAttribute("id","main2")
+
+  var img=document.createElement("img")
+  img.setAttribute("src",ele.img)
+  img.setAttribute("id","imgs2")
+
+  var para=document.createElement("p")
+  
+  para.innerText=ele.para;
+  var price=document.createElement("h4")
+  
+  price.innerText=ele.price;
+  
+  var logo=document.createElement("div")
+  logo.id="shopnowbtn"
+  var icon=document.createElement("div")
+  var li=document.createElement("li")
+  li.id="li";
+  li.className="fa-solid fa-bag-shopping" 
+  icon.append(li)
+  var aw=document.createElement("div")
+  var p=document.createElement("p")
+  p.innerText="SHOP NOW"
+  p.id="btn"
+  aw.append(p)
+  logo.append(icon,aw)
+  div.append(img,para,price,logo)
+  // child.append(div);
+
+  document.querySelector(".child").append(div)  
+});
+
+
+
+Arr3.map(function(ele,ind,arr)
+{
+  var div=document.createElement("div")
+  div.setAttribute("id","main3")
+
+  var img=document.createElement("img")
+  img.setAttribute("src",ele.img)
+  img.setAttribute("id","imgs3")
+  var name=document.createElement("h4")
+  
+  name.innerText=ele.name;
+  var para=document.createElement("p")
+  para.innerText=ele.para;
+  
+  
+
+  var btn=document.createElement("button")
+   btn.innerText=ele.btn;
+  
+ 
+  div.append(img,name,para,btn)
+  //  sk.append(div)
+  document.querySelector("#container3").append(div)
+});
+</script>

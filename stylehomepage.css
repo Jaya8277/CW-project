@@ -1,0 +1,424 @@
+.sk{
+    display: grid;
+ grid-template-columns: repeat(3,1fr);
+  /* grid-template-rows: repeat(9,600px);  */
+ gap: 10px;
+ margin-left: 15px;
+ /* margin-top: 30px; */
+ /* padding-top: 5px; */
+ 
+}
+.sk1{
+text-align: center;
+font-family: "Lato-Regular",Helvetica,Arial,sans-serif;
+font-size: 36px;
+/* line-height: 1.2; */
+color: #2e3337;
+font-weight: 400;
+padding-top: 20px;
+/* margin-top: 50px; */
+/* border: 2px solid blue; */
+padding: 5px;
+
+
+}
+
+.sk1>p{
+margin-top:-285px;
+margin-bottom: 0px;
+/* border:2px solid red */
+
+}
+
+.sk2{
+padding-top:-100px;
+}
+#container button{
+height: 44px;
+width:101px;
+background-color: white;
+border: 1px solid gray;
+color:gray;
+}
+
+
+
+#main{
+ 
+ text-align:center;
+ font-size: 14px;
+ font-family: Arial, Helvetica, sans-serif;
+ line-height: 24px;
+  margin-top: 5px; 
+      
+ /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;  */
+}
+#imgs{
+ display: grid;
+ height: 400px;
+ width:400px;
+ 
+ border-radius: 50%;
+}
+
+
+
+ #container{
+
+ grid-template-columns: repeat(1,1fr);
+ grid-template-rows: repeat(9,auto);
+ 
+}
+     
+     .child {
+ display: grid;
+ grid-template-columns: repeat(4,1fr );
+ height: 200px;
+ /* grid-template-rows: repeat(1,900px); */
+ justify-content: space-between;
+ gap: 30px;
+}
+
+
+
+
+     .child button{
+       height: 44px;
+width:100%;
+background-color: #333;
+border: 1px solid white;
+color:white;
+
+     }
+
+
+     #shopnowbtn{
+       display: flex;
+       justify-content: center;
+       color: white;
+       gap:10px;
+       background-color: black;
+     }
+   
+   #btn:hover{
+     color:black;
+   }
+     #shopnowbtn:hover{
+       background-color: turquoise;
+       
+     }
+   #li:hover{
+     color:white;
+   }
+
+     #li{
+       padding-top: 16px;
+     }
+
+
+ .child1{
+   font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+line-height: 21px;
+color: #2e3337;
+font-weight: 200px;
+padding-right: 50px;
+padding-left: 8px;
+text-align: center;
+margin-top: -305px;
+/* border: 2px solid red; */
+height:50px;
+ }
+
+
+
+ 
+
+ .child2{
+   line-height: 80px;
+   padding-top: -40px;
+ }
+
+
+ 
+#main2{
+ 
+ width: 100%;
+ text-align:center;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;   */
+  /* border: 2px solid black; */
+}
+#imgs2{
+ 
+ height: 310px;
+ width:100%;
+ border-radius: 50%;
+
+}
+
+    #container2{
+      height:300px;
+      /* border:2px solid red; */
+      margin-bottom: 300px;
+    }
+
+ 
+
+
+   #heading{
+     text-align: center;
+     height:12px;
+     margin-top:-25px;
+     /* border:2px solid red; */
+     padding-bottom: 50px;
+   }
+      
+#main3{
+ text-align:center;
+ font-size: 14px;
+ font-family: Arial, Helvetica, sans-serif;
+ line-height: 24px;
+  /* margin-top: 350px;  */
+     height: 650px; 
+ /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+ /* border:2px solid darkmagenta */
+ 
+}
+#imgs3{
+ display: grid;
+ height: 400px;
+ width:400px;
+ border-radius: 50%;
+ margin-left: 20px;
+ 
+ 
+}
+#container3 button{
+height: 44px;
+width:101px;
+background-color: white;
+/* border: 1px solid black; */
+color:gray;
+}
+
+#container3{
+ display: grid;
+ grid-template-columns:repeat(3,1fr);
+  /* grid-template-rows: repeat(1,900px);  */
+  gap: 20px; 
+  /* border:2px solid red */
+  
+ 
+} 
+
+
+
+
+/* slider css */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.showSlide {  
+  display: none  
+}  
+  .showSlide img {  
+      width: 100%;  
+  }  
+.slidercontainer { 
+   
+  width:100%;  
+  position: relative;  
+  margin: auto;  
+  /* border: 2px solid red; */
+} 
+
+.slidercontainer>.imaged{
+  /* border: 2px solid red; */
+  
+  position: absolute;
+ 
+}
+
+
+
+.left, .right {  
+  cursor: pointer;  
+  position: absolute;  
+  top: 50%;  
+  width: auto;  
+  padding: 16px;  
+  margin-top: -22px;  
+  color: white;  
+  font-weight: bold;  
+  font-size: 18px;  
+  transition: 0.6s ease;  
+  border-radius: 0 3px 3px 0;  
+}  
+.right {  
+  right: 0;  
+  border-radius: 3px 0 0 3px;  
+}  
+  .left:hover, .right:hover {  
+      background-color: rgba(115, 115, 115, 0.8);  
+  }  
+.content {  
+  
+  padding: 8px 12px;  
+  position: absolute;  
+  top: 130px; 
+  margin-left: 40px; 
+  width: 300px;  
+  text-align: center;  
+  /* border:2px solid red; */
+}  
+
+.swap{
+color:grey;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;  
+  padding: 8px 12px;  
+  position: absolute;  
+  top: 210px; 
+  margin-left: 30px; 
+  width: 400px; 
+  line-height: 28px; 
+   
+  /* border:2px solid red; */
+}
+
+
+.btn button{
+  
+  height:45px;
+  width:110px;
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+}
+
+
+
+
+.content2{  
+  color: black;
+  padding: 8px 12px;  
+  position: absolute;  
+  top: 50px; 
+  margin-left: 110px; 
+  width: 300px;  
+  text-align: center;  
+  font-size: 25px;
+  /* border:2px solid red; */
+}  
+
+.swap2{
+color:black;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;  
+  padding: 8px 12px;  
+  position: absolute;  
+  top: 210px; 
+  margin-left: 45px; 
+  width: 400px; 
+  line-height: 32px; 
+  text-align: center;
+
+}
+
+#logocontainer{
+  display: flex;
+  height: 400px;
+  width:100%;
+  /* border:2px solid blue; */
+  margin-top: 20px;
+}
+
+
+#div1 img{
+  height:80px;
+  width:180px;
+  /* border: 2px solid green; */
+  margin-top: 10px;
+  margin-left: 20px;
+}
+#div2 img{
+  height:80px;
+  width:200px;
+  /* border: 2px solid green; */
+  margin-top: 10px;
+  margin-left: 40px;
+}
+#div3 img{
+  height:40px;
+  width:200px;
+  /* border: 2px solid green; */
+  margin-top: 30px;
+  margin-left: 50px;
+}
+#div4 img{
+  height:80px;
+  width:200px;
+  /* border: 2px solid green; */
+  margin-top: 10px;
+  margin-left: 30px;
+}
+#div5 img{
+  height:80px;
+  width:160px;
+  /* border: 2px solid green; */
+  margin-top: 10px;
+  margin-left: 20px;
+}
+#div6 img{
+  height:80px;
+  width:160px;
+  /* border: 2px solid green; */
+  margin-top: 12px;
+  margin-left:20px;
+}
+.sk{
+  padding-bottom: 300px;
+}
+.active {  
+  background-color: #717171;  
+}  
+/* Fading animation */  
+.fade {  
+  -webkit-animation-name:fade;  
+  -webkit-animation-duration: .5s;  
+  animation-name: fade;  
+  animation-duration: .5s;  
+}  
+@-webkit-keyframes fade {  
+  from {  
+      opacity: .4  
+  }  
+  to {  
+      opacity: 1  
+  }  
+}  
+
+@keyframes fade {  
+  from {  
+      opacity: .4  
+  }  
+  to {  
+      opacity: 1  
+  }  
+}
