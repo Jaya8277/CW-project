@@ -1,0 +1,2129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/fddf5c0916.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="https://www.skinstore.com/favicon.ico?v=skstrus8.3759.3760" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/megamenu.css">
+<link rel="stylesheet" href="/css/mousturizer.css" />
+
+<link rel="stylesheet" href="/css/footer.css">
+    <title>Mousturizer.Com</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+<div class="utility-nav d-none d-md-block">
+  <div class="container-lg">
+    <div class="row">
+      <div class=" col-lg-12 d-flex justify-content-end   top-bar " >  
+        <img src="/image/americalogo-removebg-preview.png"/>
+        <p>us-USD &nbsp;&nbsp; Help</p>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12"> -->
+      <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-light main-menu" style="box-shadow:none">
+        <div class="container-fluid">
+          <button type="button" id="sidebarCollapse" class="btn btn-link d-block d-md-none">
+            <i class="bx bx-menu icon-single"></i>
+        </button>
+
+          <a class="navbar-brand "  href="index.html">
+            <h1 id="logo-heading  ">SkinStore</h1>
+            <p class="para">part of the <strong>LOOKFANTASTIC</strong>  group</p>
+      
+          </a>
+      
+          <!-- <ul class="navbar-nav ml-auto d-block d-md-none">
+            <li class="nav-item">
+              <a class="btn btn-link" href="#"><i class="bx bxs-cart icon-single"></i> <span class="badge badge-danger">3</span></a>
+            </li>
+          </ul> -->
+      
+          <div class="collapse navbar-collapse">
+            <form class="form-inline my-2 my-lg-0 mx-auto">
+              <input class="form-control" type="search" placeholder="Search for a product or brand..."  aria-label="Search">
+              <button class="btn  my-2 my-sm-0" type="submit"><i class="fa fa-search fa-lg "></i></button>
+            </form>
+      
+           <ul class="navbar-nav">
+           
+              <div class="dropdown my-4 mr-4" >
+              <button class="dropbtn"><i class="bi bi-person fa-lg"></i>Account</button>
+              <div class="dropdown-content" id="anchor">
+                           <div class="dropdown-content-btn"><a href="login.html"> <button id="btn">LOGIN</button></a>
+                <button id="btnn"><a href="signUp.html">REGISTER</a></button></div>
+             
+            <a href="#">Wishlist</a>
+            <a href="#">Your Orders</a>
+            <a href="#">Your Referrals</a>
+            </div>
+              </div>
+            </div>
+              
+              <!-- <a class="btn btn-primary" href="#"><i class="bx bxs-user-circle mr-1"></i> Log In </a> -->
+            
+             
+                <div class="dropdown my-4 " >
+                <button class="dropbtn"><i class="bi bi-basket3"></i><a href="cart.html">Cart</a></button>
+                <!-- <div class="dropdown-content"> -->
+                  <div class="dropdown-cart">
+              
+                    <a href="#">There are currently no items in your cart</a>
+                  
+                    </div>
+                <!-- </div> -->
+              </div>
+              
+            </ul> 
+          </div>
+      
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<hr class="header-line">
+
+
+
+
+<div class="search-bar d-block d-md-none">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <form class="form-inline mb-3 mx-auto">
+          <input class="form-control" type="search" placeholder="Search for products..." >
+          <button class="btn" id="btnborder" type="submit"><i class="bx bx-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav id="sidebar">
+  <div class="sidebar-header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-10 pl-0">
+          <a class="btn btn-primary" href="#"><i class="bx bxs-user-circle mr-1"></i> Log In</a>
+        </div>
+
+        <div class="col-2 text-left">
+          <button type="button" id="sidebarCollapseX" class="btn btn-link">
+                            <i class="bx bx-x icon-single"></i>
+                        </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="list-unstyled components links">
+    <li class="active">
+      <a href="#"><i class="bx bx-home mr-3"></i> Home</a>
+    </li>
+    <li>
+      <a href="#"><i class="bx bx-carousel mr-3"></i> Products</a>
+    </li>
+    <li>
+      <a href="#"><i class="bx bx-book-open mr-3"></i> Schools</a>
+    </li>
+    <li>
+      <a href="#"><i class="bx bx-crown mr-3"></i> Publishers</a>
+    </li>
+    <li>
+      <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bx bx-help-circle mr-3"></i>
+                    Support</a>
+      <ul class="collapse list-unstyled" id="pageSubmenu">
+        <li>
+          <a href="#">Delivery Information</a>
+        </li>
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="#">Terms & Conditions</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="bx bx-phone mr-3"></i> Contact</a>
+    </li>
+  </ul>
+
+  <h6 class="text-uppercase mb-1">Categories</h6>
+  <ul class="list-unstyled components mb-3">
+    <li>
+      <a href="#">Category 1</a>
+    </li>
+    <li>
+      <a href="#">Category 1</a>
+    </li>
+    <li>
+      <a href="#">Category 1</a>
+    </li>
+    <li>
+      <a href="#">Category 1</a>
+    </li>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> <li>
+      <a href="#">Category 1</a>
+    </li>
+    <li>
+      <a href="#">Category 1</a>
+    </li>
+  </ul>
+
+  <ul class="social-icons">
+    <li><a href="#" target="_blank" title=""><i class="bx bxl-facebook-square"></i></a></li>
+    <li><a href="#" target="_blank" title=""><i class="bx bxl-twitter"></i></a></li>
+    <li><a href="#" target="_blank" title=""><i class="bx bxl-linkedin"></i></a></li>
+    <li><a href="#" target="_blank" title=""><i class="bx bxl-instagram"></i></a></li>
+  </ul>
+
+</nav>
+
+
+<div class="container-fluid" id="mega-menu">
+  <div class="row" id="mega-menu">
+      <div class="col-12" id="mega-menu">
+        <header id="mega-menu">
+          <nav class="navbar xs-hide sm-hide" id="mega-menu">
+            <ul class="menu hover-enabled" [class]="disable_hover ? 'menu' : 'menu hover-enabled'">
+      
+              <li class="default">    
+                <a tabindex="0" role="menuitem" class="promo-imglink" href="/link" title="Mens">
+                  <amp-img tabindex="-1" alt="Mens" src="https://placeimg.com/460/290/nature" width="460" height="290" layout="responsive">
+                  </amp-img>
+                </a>
+                <div class="tab-tooltip" tabindex="0" role="button" aria-label="Toggle New submenu" title="Toggle New submenu" on="tap:AMP.setState({nav_toggle0: !nav_toggle0, disable_hover: !disable_hover})">Toggle New submenu </div>
+                <ul class="submenu" [class]="nav_toggle0 ? 'submenu nav-show' : 'submenu'">
+                  <div class="submenu-flex">
+                    <li class="promo-container">
+                      <a tabindex="0" role="menuitem" class="promo-imglink" href="/link" title="Mens">
+                        <amp-img tabindex="-1" alt="Mens" src="https://placeimg.com/460/290/nature" width="460" height="290" layout="responsive">
+                        </amp-img>
+                      </a>
+                    </li>
+      
+                  </div>
+      
+                  <div class="submenu-flex">
+      
+                    <li class="promo-container">
+                      <a tabindex="0" role="menuitem" class="promo-imglink" href="/link" title="Mens">
+                        <amp-img tabindex="-1" alt="Mens" src="https://placeimg.com/460/290/people" width="460" height="290" layout="responsive">
+                        </amp-img>
+                      </a>
+                    </li>
+      
+                  </div>
+      
+                  <div class="submenu-flex">
+      
+                    <li class="promo-container">
+                      <a tabindex="0" role="menuitem" class="promo-imglink" href="/link" title="Womens">
+                        <amp-img tabindex="-1" alt="Womens" src="https://placeimg.com/460/290/tech" width="460" height="290" layout="responsive">
+                        </amp-img>
+                      </a>
+                    </li>
+      
+                  </div>
+      
+                  <div class="submenu-flex">
+      
+                    <li class="promo-container">
+                      <a tabindex="0" role="menuitem" class="promo-imglink" href="/link" title="Kids">
+                        <amp-img tabindex="-1" alt="Kids" src="https://placeimg.com/460/290/animals" width="460" height="290" layout="responsive">
+                        </amp-img>
+                      </a>
+                    </li>
+      
+                  </div>
+      
+                  <div class="nav-toggle-close" tabindex="0" role="button" aria-label="Close New submenu" on="tap:AMP.setState({nav_toggle0: !nav_toggle0, disable_hover: !disable_hover})">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>              </div>
+                </ul>
+              </li>
+              <li class="default">
+                <a class="nav-toplink " id="mens" tabindex="0" href="Brands.html" title="Mens">Brands</a>
+      
+                <div class="tab-tooltip" tabindex="0" role="button" aria-label="Toggle Mens submenu" title="Toggle Mens submenu" on="tap:AMP.setState({nav_toggle1: !nav_toggle1, disable_hover: !disable_hover})">
+                  Toggle Mens submenu </div>
+      
+               
+              </li>
+              <li class="default">
+                <a class="nav-toplink " id="mens" tabindex="0" href="/link" title="Mens">Sale</a>
+      
+                <div class="tab-tooltip" tabindex="0" role="button" aria-label="Toggle Mens submenu" title="Toggle Mens submenu" on="tap:AMP.setState({nav_toggle1: !nav_toggle1, disable_hover: !disable_hover})">
+                  Toggle Mens submenu </div>
+      
+              
+              </li>
+              <li class="default">
+                <a class="nav-toplink " id="mens"  tabindex="0" href="/link" title="Mens">Build a Routine</a>
+      
+                <div class="tab-tooltip" tabindex="0" role="button" aria-label="Toggle Mens submenu" title="Toggle Mens submenu" on="tap:AMP.setState({nav_toggle1: !nav_toggle1, disable_hover: !disable_hover})">
+                  Toggle Mens submenu </div>
+      
+                <ul class="submenu" [class]="nav_toggle1 ? 'submenu nav-show' : 'submenu'">
+      
+                  <div class="submenu-flex">
+      
+                    <li class="submenu-title">
+                      <a tabindex="0" href="SkinTypeRoutine.html" title="Clothing">  Skin Type Routines      </a></li>
+                    <li class="sublink">
+                      <a tabindex="0" href="SkinTypeRoutine.html" title="Link">  Dry Skin Routine </a>
+                    </li>
+      
+                   
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Normal Skin Routine </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Oily Skin Routine</a> </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Combination Skin Routine</a>                                                            </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Sensitive Skin Routine </a>
+                    </li>
+      
+                  
+    
+                  </div>
+          
+                  <div class="submenu-flex">
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">    Skin Concern Routines  </a>                
+                      <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">    Acne Routine </a>
+                    </li>              
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">        Fine Lines & Wrinkles Routine
+                      </a>
+                    </li>    
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">    Dark Spots & Discoloration Routine
+                      </a>                                                   
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Redness & Rosacea Routine</a>                                                          
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Dullness & Brightening Routine </a>
+                    </li>
+      
+                   
+                  </div>
+              
+
+                  <div class="submenu-flex">
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">   Build a Hair Routine  </a>                
+                      <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Fine, Thinning Hair Routine </a>
+                    </li>              
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Healthy Scalp Routine </a>
+                    </li>    
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Colored Hair Routine</a>                                                   
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Dry, Damaged Hair Routine</a>                                                          
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Oily Hair Routine </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Link </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Hair Styling Routine </a>
+                    </li>
+                  </div>
+        
+                  <div class="submenu-flex">
+      
+                    <li class="promo-container">
+                      <a tabindex="0" role="menuitem" class="promo-imglink" href="/link" title="Mens promo">
+                        <amp-img tabindex="-1" alt="Shop mens" src="https://placeimg.com/340/580/arch" width="340" height="580" layout="responsive">
+                        </amp-img>
+                      </a>
+                    </li>
+      
+                  </div>
+      
+                  <!-- <div class="nav-toggle-close" tabindex="0" role="button" aria-label="Close Mens submenu" on="tap:AMP.setState({nav_toggle1: !nav_toggle1, disable_hover: !disable_hover})">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>              </div> -->
+                </ul>
+              </li>
+              <li class="default">
+                <a class="nav-toplink " id="mens"  tabindex="0" href="index.html" title="Mens">SkinCare</a>
+      
+                <div class="tab-tooltip" tabindex="0" role="button" aria-label="Toggle Mens submenu" title="Toggle Mens submenu" on="tap:AMP.setState({nav_toggle1: !nav_toggle1, disable_hover: !disable_hover})">
+                  Toggle Mens submenu </div>
+      
+                <ul class="submenu" [class]="nav_toggle1 ? 'submenu nav-show' : 'submenu'">
+      
+                  <div class="submenu-flex">
+      
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">  Popular Categories                        
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  View All Skin Care </a>
+                    </li>
+      
+                   
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   New In </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Clean Skincare</a> </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   5* Rated Products</a>                                                            </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">    Gifts & Sets </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Supersizes & Duo </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Travel Sizes </a>
+                    </li>
+    
+                  </div>
+                  <div class="submenu-flex">
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">    By Product Type  </a>                
+                      <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Cleansers </a>
+                    </li>              
+                    <li class="sublink">
+                      <a tabindex="0" href="mousturizerpage.html" title="Link">   Moisturizers </a>
+                    </li>    
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Serums</a>                                                   
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Exfoliators</a>                                                          
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Masks </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Eye Care
+                      </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Toners </a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">    Lip Care </a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">    Oils </a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Treatments </a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">    Mists </a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">     Peels </a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">    Tools </a>
+                    </li>
+                  </div>
+                 
+                  <div class="submenu-flex">
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">   By Ingredient  </a>                
+                      <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Vitamin C </a>
+                    </li>              
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  AHA </a>
+                    </li>    
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Caffeine</a>                                                   
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Retinol</a>                                                          
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Hyaluronic Acid </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Niacinamide </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Lactic Acid </a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Salicylic Acid</a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Glycolic Acid </a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Azelaic Acid </a>
+                    </li>
+                  </div>
+                  <div class="submenu-flex">
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">   By Specific Concern  </a>                
+                      <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Acne & Blemishes </a>
+                    </li>              
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Fine Lines & Wrinkles </a>
+                    </li>    
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Dark Circles</a>                                                   
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Dry Skin</a>                                                          
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Dullness </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Lack of Firmness </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Pigmentation </a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Pregnancy Skincare </a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Redness & Rosacea </a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Sensitive Skin </a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Visible Pores </a>
+                    </li>
+                  </div>
+              
+
+                  <div class="submenu-flex">
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">  Sunscreen & Suncare  </a>                
+                      <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Take The SPF Quiz </a>
+                    </li>              
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   SPF 30 and over </a>
+                    </li>    
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> SPF 50 and over</a>                                                   
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  After Sun</a>                                                          
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Tinted </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Mineral </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Eye Protection </a>
+                    </li>
+                  </div>
+        
+                  <div class="submenu-flex">
+      
+                    <li class="promo-container">
+                      <a tabindex="0" role="menuitem" class="promo-imglink" href="/link" title="Mens promo">
+                        <amp-img tabindex="-1" alt="Shop mens" src="https://placeimg.com/340/580/arch" width="340" height="580" layout="responsive">
+                        </amp-img>
+                      </a>
+                    </li>
+      
+                  </div>
+      
+                  <!-- <div class="nav-toggle-close" tabindex="0" role="button" aria-label="Close Mens submenu" on="tap:AMP.setState({nav_toggle1: !nav_toggle1, disable_hover: !disable_hover})">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>              </div> -->
+                </ul>
+              </li>
+              <li class="default">
+                <a class="nav-toplink " id="mens"  tabindex="0" href="/link" title="Mens">Hair</a>
+      
+                <div class="tab-tooltip" tabindex="0" role="button" aria-label="Toggle Mens submenu" title="Toggle Mens submenu" on="tap:AMP.setState({nav_toggle1: !nav_toggle1, disable_hover: !disable_hover})">
+                  Toggle Mens submenu </div>
+      
+                <ul class="submenu" [class]="nav_toggle1 ? 'submenu nav-show' : 'submenu'">
+      
+                  <div class="submenu-flex">
+      
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">   Popular Categories                        
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   View All Hair Care </a>
+                    </li>
+      
+                   
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">    New In </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Clean Hair Care</a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  5* Rated Products</a>                                                            </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Gifts & Sets </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Travel Sizes </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Supersize & Duos </a>
+                    </li>
+    
+                  </div>
+                  <div class="submenu-flex">
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">   Product Type  </a>                
+                      <li class="sublink">
+                      <a tabindex="0" href="Shampoo.html" title="Link">  Shampoo </a>
+                    </li>              
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Conditioners </a>
+                    </li>    
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Hair Treatments</a>                                                   
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Hair Masks</a>                                                          
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Hair Oils </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Hair Sprays </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Hair Styling </a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Hair Thinning & Loss </a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Hair Color Treatments </a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Hair Supplements </a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Hair Brushes & Combs </a>
+                    </li>
+                  </div>
+                  <div class="submenu-flex">
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">   Hair Type  </a>                
+                      <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Anti-Dandruff & Scalp Care </a>
+                    </li>              
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">    Coarse & Textured Hair </a>
+                    </li>    
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Colored Hair</a>                                                   
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">    Curly & Wavy Hair</a>                                                          
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Damaged Hair </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">    Dry Hair </a>
+                    </li>
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">      Fine Hair </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">     Oily Hair </a>
+                    </li>
+      
+                  
+                  </div>
+                 
+                  <div class="submenu-flex">
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">  Electrical  </a>                
+                      <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Flat Irons </a>
+                    </li>              
+                    <li class="sublink">
+                      <a tabindex="0" href="Hairdryers.html" title="Link">   Hair Dryers </a>
+                    </li>    
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Rollers & Curling Tongs</a>                                                   
+                    </li>
+                  </div>
+              
+
+                  <div class="submenu-flex">
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">  Hair Removal  </a>                
+                      <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Hair Removal Devices </a>
+                    </li>              
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">    Hair Removal Products </a>
+                    </li>    
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Men's Shaving Products</a>                                                   
+                    </li>
+      
+                   
+                  </div>
+        
+                  <div class="submenu-flex">
+      
+                    <li class="promo-container">
+                      <a tabindex="0" role="menuitem" class="promo-imglink" href="/link" title="Mens promo">
+                        <amp-img tabindex="-1" alt="Shop mens" src="https://placeimg.com/340/580/arch" width="340" height="580" layout="responsive">
+                        </amp-img>
+                      </a>
+                    </li>
+      
+                  </div>
+      
+                  <!-- <div class="nav-toggle-close" tabindex="0" role="button" aria-label="Close Mens submenu" on="tap:AMP.setState({nav_toggle1: !nav_toggle1, disable_hover: !disable_hover})">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>              </div> -->
+                </ul>
+              </li>
+              <li class="default">
+                <a class="nav-toplink " id="mens"  tabindex="0" href="/link" title="Mens">Makeup</a>
+      
+                <div class="tab-tooltip" tabindex="0" role="button" aria-label="Toggle Mens submenu" title="Toggle Mens submenu" on="tap:AMP.setState({nav_toggle1: !nav_toggle1, disable_hover: !disable_hover})">
+                  Toggle Mens submenu </div>
+      
+                <ul class="submenu" [class]="nav_toggle1 ? 'submenu nav-show' : 'submenu'">
+      
+                
+                  <div class="submenu-flex">
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">    Popular Categories  </a>                
+                      <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   View All Cosmetics </a>
+                    </li>              
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   New In </a>
+                    </li>    
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> 5* Rated Products</a>                                                   
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Gifts & Sets</a>                                                          
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Brushes & Applicators </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">      Makeup palettes </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Nails </a>
+                    </li>
+                  </div>
+                  <div class="submenu-flex">
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">   Eyes  </a>                
+                      <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">       Eye Liners </a>
+                    </li>              
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">      Lash & Brow Enhancers  </a>
+                    </li>    
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Eye Shadows</a>                                                   
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Mascaras</a>                                                          
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">    Brow Pencils </a>
+                    </li>
+      
+                  
+                  </div>
+                  <div class="submenu-flex">
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">  Face  </a>                
+                      <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   BB & CC Cream </a>
+                    </li>              
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Blushers </a>
+                    </li>    
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Bronzers</a>                                                   
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Color Correctors</a>                                                          
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Concealers </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Contour </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Face Powders</a>
+                    </li>
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Foundations</a>
+                    </li>
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Highlighters</a>
+                    </li>
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Makeup Removers</a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Makeup Setting Spray</a>
+                    </li>
+
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Primers</a>
+                    </li>
+                    <li class="sublink">
+                      <a tabindex="0" href="mousturizerpage.html" title="Link"> Tinted Moisturizer</a>
+                    </li>
+                  </div>
+              
+
+                  <div class="submenu-flex">
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">   Lips  </a>                
+                      <li class="sublink">
+                      <a tabindex="0" href="lipistickpage.html" title="Link">   Lipsticks </a>
+                    </li>              
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Lip Balms </a>
+                    </li>    
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Lip Glosses</a>                                                   
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Lip Liners</a>                                                          
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Lip Plumpers </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="lipistickpage.html" title="Link">  Liquid Lipsticks </a>
+                    </li>
+      
+                  </div>
+        
+                  <div class="submenu-flex">
+      
+                    <li class="promo-container">
+                      <a tabindex="0" role="menuitem" class="promo-imglink" href="/link" title="Mens promo">
+                        <amp-img tabindex="-1" alt="Shop mens" src="https://placeimg.com/340/580/arch" width="340" height="580" layout="responsive">
+                        </amp-img>
+                      </a>
+                    </li>
+      
+                  </div>
+      
+                  <!-- <div class="nav-toggle-close" tabindex="0" role="button" aria-label="Close Mens submenu" on="tap:AMP.setState({nav_toggle1: !nav_toggle1, disable_hover: !disable_hover})">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>              </div> -->
+                </ul>
+              </li>
+              <li class="default">
+                <a class="nav-toplink " id="mens"  tabindex="0" href="/link" title="Mens">Tools</a>
+      
+                <div class="tab-tooltip" tabindex="0" role="button" aria-label="Toggle Mens submenu" title="Toggle Mens submenu" on="tap:AMP.setState({nav_toggle1: !nav_toggle1, disable_hover: !disable_hover})">
+                  Toggle Mens submenu </div>
+      
+                <ul class="submenu" [class]="nav_toggle1 ? 'submenu nav-show' : 'submenu'">
+      
+                 
+                 
+                  <div class="submenu-flex">
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">    Popular Categories  </a>                
+                      <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">    View All Tools </a>
+                    </li>              
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">   Makeup Brushes & Accessories    </a>
+                    </li>    
+                  </div>
+                  <div class="submenu-flex">
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">    Hair Care  </a>                
+                      <li class="sublink">
+                      <a tabindex="0" href="Hairdryers.html" title="Link">  Hair Dryers </a>
+                    </li>              
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Flat Irons </a>
+                    </li>    
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">    Rollers & Curling Irons
+                      </a>                                                   
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Hair Brushes</a>                                                          
+                    </li>
+      
+                   
+                  </div>
+              
+
+                  <div class="submenu-flex">
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">  Skincare   </a>                
+                      <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">    LED Light Therapy </a>
+                    </li>              
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">    Facial Toning </a>
+                    </li>    
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Cleansing </a>                                                   
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Dermabrasion </a>                                                          
+                    </li>
+      
+                   
+                  </div>
+        
+                  <div class="submenu-flex">
+      
+                    <li class="promo-container">
+                      <a tabindex="0" role="menuitem" class="promo-imglink" href="/link" title="Mens promo">
+                        <amp-img tabindex="-1" alt="Shop mens" src="https://placeimg.com/340/580/arch" width="340" height="580" layout="responsive">
+                        </amp-img>
+                      </a>
+                    </li>
+      
+                  </div>
+      
+                  <!-- <div class="nav-toggle-close" tabindex="0" role="button" aria-label="Close Mens submenu" on="tap:AMP.setState({nav_toggle1: !nav_toggle1, disable_hover: !disable_hover})">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>              </div> -->
+                </ul>
+              </li>
+              
+              <li class="default">
+      
+                <a class="nav-toplink "  id="mens"  tabindex="0" href="/link" title="Womens">Bath&Body</a>
+      
+                <div class="tab-tooltip" tabindex="0" role="button" aria-label="Toggle Womens submenu" title="Toggle Womens submenu" on="tap:AMP.setState({nav_toggle2: !nav_toggle2, disable_hover: !disable_hover})">
+                  Toggle Womens submenu </div>
+      
+                <ul class="submenu" [class]="nav_toggle2 ? 'submenu nav-show' : 'submenu'">
+      
+
+                  <div class="submenu-flex">
+      
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing"> Popular Categories  </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="Bath&Body.html" title="Link">View All Bath & Body </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">New In </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">Clean Bath & Body</a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> 5* Rated Products   </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">Travel Sizes  </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">At Home Spa</a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Deodorants  </li>
+      
+                    <li class="sublink view-all">
+                      <a tabindex="0" href="/link" title="/link"> Gifts & Sets  </a>
+                    </li>
+
+                    <li class="sublink view-all">
+                      <a tabindex="0" href="/link" title="/link">Oral Care </a>
+                    </li>
+
+                    <li class="sublink view-all">
+                      <a tabindex="0" href="/link" title="/link"> Mom & Baby</a>
+                    </li>
+
+                   
+                  </div>
+
+                  <div class="submenu-flex">
+      
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing"> Bath & Shower  </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Baths Oils/Soak </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Bath Salts      </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">Body Washes</a>   </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">Cleansing Bars                                                            </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Exfoliators   </a>
+                    </li>
+      
+                   
+                  </div>
+
+                  <div class="submenu-flex">
+      
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing"> Self Tanners  </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Accessories </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Pre-Tan Preparation    </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Body Tanners    </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Post Tanning                                                            </a>
+                    </li>
+      
+                   
+      
+                  
+                  </div>
+      
+                  <div class="submenu-flex">
+      
+                    <li class="submenu-title">
+                      <a tabindex="0" href="mousturizerpage.html" title="Footwear">     Moisturizers </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">    Balms</a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">Butters  </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">Creams </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Lotions  </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">Oils  </a>
+                    </li>
+      
+                   
+                  </div>
+      
+                  <div class="submenu-flex">
+      
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Accessories"> Targeted Care   </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">
+                        Bust                                                            </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">
+                        Cellulite                                                            </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">
+                        Dry Skin                                                            </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">
+                        Hair Removal </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">
+                        Hand & Foot Care                                                            </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">
+                        Hand Soap, Sanitizers & Creams                                                            </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">Legs</a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">Slimming & Sculpting </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Stretch Marks  </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Sunscreen </a>
+                    </li>
+      
+                   
+      
+                   
+                  </div>
+      
+                  <div class="submenu-flex">
+      
+                    <li class="promo-container">
+                      <a tabindex="0" role="menuitem" class="promo-imglink" href="/link" title="Womens promo">
+                        <amp-img tabindex="-1" alt="Shop Womens" src="https://placeimg.com/340/580/nature" width="340" height="580" layout="responsive">
+                        </amp-img>
+                      </a>
+                    </li>
+      
+                  </div>
+      
+                  <!-- <div class="nav-toggle-close" tabindex="0" role="button" aria-label="Close Womens submenu" on="tap:AMP.setState({nav_toggle2: !nav_toggle2, disable_hover: !disable_hover})">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>              </div> -->
+                </ul>
+              </li>
+              <li class="default">
+      
+                <a class="nav-toplink " id="mens" tabindex="0" href="selfcare.html" title="Kids">Self-Care </a>
+      
+                <div class="tab-tooltip" tabindex="0" role="button" aria-label="Toggle Kids submenu" title="Toggle Kids submenu" on="tap:AMP.setState({nav_toggle3: !nav_toggle3, disable_hover: !disable_hover})">
+                  Toggle Kids submenu </div>
+      
+                <ul class="submenu" [class]="nav_toggle3 ? 'submenu nav-show' : 'submenu'">
+      
+                  <div class="submenu-flex">
+      
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">  Popular Categories </a> </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="selfcare.html" title="Link"> SelfCare   </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> New In                                                              </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">
+                        5* Rated Products                                                            </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">
+                        At-Home Spa                                                            </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">
+                         View All Wellness Products                                                            </a>
+                    </li>
+      
+                  </div>
+      
+                  <div class="submenu-flex">
+      
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Footwear"> Sexual Wellness                                                        </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">
+                        Devices                                                            </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">
+                        Skin Care                                                            </a>
+                    </li>
+      
+                  </div>
+
+                  <div class="submenu-flex">
+      
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">  Supplements </a> </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Skin   </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link"> Hair                                                             </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">
+                        Immune Boosting                                                         </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">
+                        Health & Wellbeing                                                         </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">
+                        Weight Loss                                                           </a>
+                    </li>
+      
+                  </div>
+
+
+                  <div class="submenu-flex">
+      
+                    <li class="submenu-title">
+                      <a tabindex="0" href="/link" title="Clothing">   Clean Beauty  </a> </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Clean Skincare    </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">  Clean Haircare                                                              </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">
+                        Clean Makeup                                                        </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Link">
+                        Clean Bath & Body                                                        </a>
+                    </li>
+      
+                   
+      
+                  </div>
+      
+                  <div class="submenu-flex">
+      
+                    <li class="promo-container">
+                      <a tabindex="0" role="menuitem" class="promo-imglink" href="/link" title="Kids promo">
+                        <amp-img tabindex="-1" alt="Shop Kids" src="https://placeimg.com/340/580/people" width="340" height="580" layout="responsive">
+                        </amp-img>
+                      </a>
+                    </li>
+      
+                  </div>
+      
+                   </ul>
+              </li>
+              <li class="default">
+      
+                <a class="nav-toplink " id="mens" tabindex="0" href="#" title="Brand Test">
+                  Fragrance                       </a>
+      
+                <div class="tab-tooltip" tabindex="0" role="button" aria-label="Toggle Brand Test submenu" title="Toggle Brand Test submenu" on="tap:AMP.setState({nav_toggle4: !nav_toggle4, disable_hover: !disable_hover})">
+                  Toggle Brand Test submenu </div>
+      
+                <ul class="submenu" [class]="nav_toggle4 ? 'submenu nav-show' : 'submenu'">
+      
+                  <div class="submenu-flex">
+      
+                    <li class="submenu-title">
+                      <a tabindex="0" href="" title="A-B">    Popular Categories                 </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Armani">View All Fragrance                         </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Armani">
+                        New In                                                            </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Armani">
+                        5* Rated Products                                                            </a>
+                    </li>
+      
+                   
+                  </div>
+      
+                  <div class="submenu-flex">
+      
+                    <li class="submenu-title">
+                      <a tabindex="0" href="" title="C-F">  Top Brands                                         </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Channel">
+                        NEOM Organics                                                            </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Channel">
+                        Glasshouse Fragrances                                                           </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="CK Jeans">
+                        KORRES                                                           </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="CK Jeans">
+                        NEST Fragrances                                                           </a>
+                    </li>
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="CK Jeans">
+                        Molton Brown                                                           </a>
+                    </li>
+                  </div>
+      
+                  <div class="submenu-flex">
+      
+                    <li class="submenu-title">
+                      <a tabindex="0" href="" title="H-N">
+                        Personal Fragrance                                      </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Channel">Perfume</a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="CK Jeans">Eau de Toilette</a>
+                    </li> <li class="sublink">
+                      <a tabindex="0" href="/link" title="Channel">
+                        Body Spray                                                          </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="CK Jeans">
+                        For Her                                                          </a>
+                    </li> <li class="sublink">
+                      <a tabindex="0" href="/link" title="Channel">
+                        For Him                                                           </a>
+                    </li>
+      
+                   
+                   
+                  </div>
+      
+                  <div class="submenu-flex">
+      
+                    <li class="submenu-title">
+                      <a tabindex="0" href="" title="P-Z"> Home Fragrance         </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Ralph Lauren">    Scented Candles                   </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Ralph Lauren">  Diffusers                                                          </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Ted Baker"> Aromatherapy                                                            </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Ted Baker"> Pillow Mists                                                           </a>
+                    </li>
+      
+                    <li class="sublink">
+                      <a tabindex="0" href="/link" title="Ted Baker"> Room Sprays                                                          </a>
+                    </li>
+                 
+                  </div>
+      
+                  <div class="nav-toggle-close" tabindex="0" role="button" aria-label="Close Brand Test submenu" on="tap:AMP.setState({nav_toggle4: !nav_toggle4, disable_hover: !disable_hover})">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>              </div>
+                </ul>
+              </li>
+              <li class="default">
+      
+                <a class="nav-toplink " id="mens" tabindex="0" href="/link" title="Sale">
+                                      New                            </a>
+      
+                <div class="tab-tooltip" tabindex="0" role="button" aria-label="Toggle Sale submenu" title="Toggle Sale submenu" on="tap:AMP.setState({nav_toggle5: !nav_toggle5, disable_hover: !disable_hover})">
+                  Toggle Sale submenu </div>
+      
+                  <ul class="submenu" [class]="nav_toggle4 ? 'submenu nav-show' : 'submenu'">
+      
+                    <div class="submenu-flex">
+        
+                      <li class="submenu-title">
+                        <a tabindex="0" href="" title="H-N">
+                          Latest brands                                      </a>
+                      </li>
+        
+                      <li class="sublink">
+                        <a tabindex="0" href="/link" title="Channel"> Alpha-H</a>
+                      </li>
+        
+                      <li class="sublink">
+                        <a tabindex="0" href="/link" title="CK Jeans">  Alo</a>
+                      </li> <li class="sublink">
+                        <a tabindex="0" href="/link" title="Channel">
+                          Foria                                                         </a>
+                      </li>
+        
+                      <li class="sublink">
+                        <a tabindex="0" href="/link" title="CK Jeans">
+                          Nion                                                         </a>
+                      </li> <li class="sublink">
+                        <a tabindex="0" href="/link" title="Channel">
+                          Sulwhasoo                                                          </a>
+                      </li>
+                      <li class="sublink">
+                        <a tabindex="0" href="/link" title="Channel">
+                          Cowshed                                                          </a>
+                      </li>
+                      <li class="sublink">
+                        <a tabindex="0" href="/link" title="Channel">
+                          Patricks                                                          </a>
+                      </li>
+                      <li class="sublink">
+                        <a tabindex="0" href="/link" title="Channel">
+                          Marvis                                                          </a>
+                      </li>
+                      <li class="sublink">
+                        <a tabindex="0" href="/link" title="Channel">
+                          Medik8                                                          </a>
+                      </li>
+        
+                      <li class="sublink">
+                        <a tabindex="0" href="/link" title="Channel">
+                          Nurse Jamie                                                          </a>
+                      </li>
+                      <li class="sublink">
+                        <a tabindex="0" href="/link" title="Channel">
+                          Glasshouse                                                         </a>
+                      </li>
+                     
+                     
+                    </div>
+        
+                    <div class="submenu-flex">
+        
+                      <li class="submenu-title">
+                        <a tabindex="0" href="" title="P-Z">  View All New     </a>
+                      </li>
+        
+                      <li class="sublink">
+                        <a tabindex="0" href="/link" title="Ralph Lauren">    New Skin Care                </a>
+                      </li>
+        
+                      <li class="sublink">
+                        <a tabindex="0" href="/link" title="Ralph Lauren">     New Makeup                      </a>
+                      </li>
+        
+                      <li class="sublink">
+                        <a tabindex="0" href="/link" title="Ted Baker">New Hair Care                           </a>
+                      </li>
+        
+                      <li class="sublink">
+                        <a tabindex="0" href="/link" title="Ted Baker">  New Bath & Body                                                           </a>
+                      </li>
+        
+                      <li class="sublink">
+                        <a tabindex="0" href="/link" title="Ted Baker">   New Fragrance                                                        </a>
+                      </li>
+                   
+                    </div>
+        
+                    <div class="nav-toggle-close" tabindex="0" role="button" aria-label="Close Brand Test submenu" on="tap:AMP.setState({nav_toggle4: !nav_toggle4, disable_hover: !disable_hover})">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>              </div>
+                  </ul>
+              </li>
+              <li class="default">
+      
+                <a class="nav-toplink " id="mens" tabindex="0" href="/link" title="Sale">
+                                      Advice                            </a>
+      
+                <div class="tab-tooltip" tabindex="0" role="button" aria-label="Toggle Sale submenu" title="Toggle Sale submenu" on="tap:AMP.setState({nav_toggle5: !nav_toggle5, disable_hover: !disable_hover})">
+                  Toggle Sale submenu </div>
+      
+                <ul class="submenu" [class]="nav_toggle5 ? 'submenu nav-show' : 'submenu'">
+      
+                  <div class="submenu-flex">
+      
+                    <li class="promo-container">
+                      <a tabindex="0" role="menuitem" class="promo-imglink" href="/link" title="Promo">
+                        <amp-img tabindex="-1" alt="Promo" src="https://placeimg.com/1000/600/people" width="1000" height="600" layout="responsive">
+                        </amp-img>
+                      </a>
+                    </li>
+      
+                  </div>
+      
+                  <div class="nav-toggle-close" tabindex="0" role="button" aria-label="Close Sale submenu" on="tap:AMP.setState({nav_toggle5: !nav_toggle5, disable_hover: !disable_hover})">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>              </div>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <!-- end nav -->
+  
+      </div>
+  </div>
+</div>
+
+<div class="overlay-service"></div>
+
+<div class="utility-nav d-none d-md-block">
+  <div class="container align-items-center text-center my-2 py-3 ">
+    <div class="row">
+      <div class="col-xs-3 px-4 ">
+        <p class="serivce-para"><i class="fa fa-truck"></i> FREE US Shipping Over $49</p>
+      </div>
+      <div class="col-xs-3 px-4">
+        <p class="serivce-para" > <i class="fa fa-check-circle"></i>  Refer a Friend, Get $15</p>
+      </div>
+      <div class="col-xs-3 px-4">
+        <p class="serivce-para">  <i class="fa fa-truck"></i>New Customers Save 20% - Use Code NEWBIE</p>
+      </div>
+      <div class="col-xs-3 px-4">
+       <p class="serivce-para "> <i class="fa fa-check"></i>Free Beauty Consultations</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid   ">
+<div class="row gx-5">
+  <div class="col-lg-12 col-sm-12">
+    <h5 class="p-2 offers">  15% off with code SS15 + 9-Piece Feb Beauty Bag (Worth $91) @ $150 | Shop now>
+    </h5>
+
+  </div>
+</div>
+</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+   
+    <script>
+        $(document).ready(function() {
+  $("#sidebarCollapse").on("click", function() {
+    $("#sidebar").addClass("active");
+  });
+
+  $("#sidebarCollapseX").on("click", function() {
+    $("#sidebar").removeClass("active");
+  });
+
+  $("#sidebarCollapse").on("click", function() {
+    if ($("#sidebar").hasClass("active")) {
+      $(".overlay").addClass("visible");
+      console.log("it's working!");
+    }
+  });
+
+  $("#sidebarCollapseX").on("click", function() {
+    $(".overlay").removeClass("visible");
+  });
+});
+
+    </script>
+
+<!-- ------********************------*********Header End***********------******************** -->
+
+<!-- ------********************------*********Inerr Part Start **********------******************** -->
+
+
+<div class="productDescription">
+    <h1>Moisturizers</h1>
+    <p>1392 results</p>
+
+    <p>
+      SkinStore offers a complete range of moisturizers which cater for every
+      individual skin type and concern. Moisturizing your skin morning and
+      night is one of the most important steps within your skin care regime,
+      and a product perfectly designed for you can make all the difference.
+      Featuring
+      <span id="more"
+        >professional skin care products from brands such as NUXE, Elizabeth
+        Arden and Erno Laszlo, you'll be sure to find the right one to look
+        after your skin. From moisturizers aimed to nourish and hydrate, to
+        night creams designed to prevent the signs of aging and vitality, your
+        skin will be on it's way to looking its healthiest.</span
+      >
+    </p>
+    <button onclick="myFunction()" id="myBtn">Read more</button>
+  </div>
+
+  <div class="line"></div>
+
+  <div id="container">
+    <li>
+      <span> <a href="#"> Sort by </a> </span>
+      <span
+        ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+      ></span>
+      <div class="submenu">
+        <ul>
+          <li sort="lth" onclick="sortAscending()" class="sort">
+            price low to high
+          </li>
+          <li sort="htl" onclick="sortDescending()" class="sort">
+            price hight to low
+          </li>
+          <li>popularity</li>
+        </ul>
+      </div>
+    </li>
+    <input id="search" onkeyup="search()" placeholder="Brand" />
+
+    <li>
+      <span> <a href="#">Skincare Product Type</a> </span>
+      <span
+        ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+      ></span>
+      <div class="submenu submenu-1">
+        <ul>
+          <li>Moisturizers (1392)</li>
+          <li>Moisturizers (1392)</li>
+          <li>Cleansers (36)</li>
+          <li>Eye Care (25)</li>
+          <li>Neck & Décolletage (22)</li>
+          <li>Toners (22)</li>
+          <li>Masks (18)</li>
+          <li>Exfoliators & Scrubs (15)</li>
+          <li>Lip Care (9)</li>
+          <li>Peels (4)</li>
+          <li>Skincare Electrical Devices (1)</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <span> <a href="#">Skincare Format</a> </span>
+      <span
+        ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+      ></span>
+      <div class="submenu submenu-1">
+        <ul>
+          <li>Cream (512)</li>
+          <li>Fluid (147)</li>
+          <li>Oil (94)</li>
+          <li>Gel (73)</li>
+          <li>Serum (51)</li>
+          <li>Balm (48)</li>
+          <li>Foam (39)</li>
+          <li>Mist (39)</li>
+          <li>Clay (19)</li>
+          <li>Sheet (19)</li>
+          <li>Water (19)</li>
+          <li>Ampoules (15)</li>
+          <li>Essence (9)</li>
+          <li>Milk (9)</li>
+          <li>Pad (1)</li>
+          <li>Wipe (1)</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <span> <a href="#"> Complexion Format</a> </span>
+      <span
+        ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+      ></span>
+      <div class="submenu submenu-1">
+        <ul>
+          <li>Cream(4)</li>
+          <li>Liquid(7)</li>
+          <li>Stick(20)</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <span> <a href="#">Complexion Finish</a> </span>
+      <span
+        ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+      ></span>
+      <div class="submenu submenu-1">
+        <ul>
+          <li>Dewy(1)</li>
+          <li>Glossy(2)</li>
+          <li>Matte(3)</li>
+          <li>Satin(2)</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <span> <a href="#">Complexion Coverage</a> </span>
+      <span
+        ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+      ></span>
+      <div class="submenu submenu-1">
+        <ul>
+          <li>Buildable(4)</li>
+          <li>Full(2)</li>
+          <li>Medium(1)</li>
+          <li>Sheer(2)</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <span> <a href="#">Cosmetics Tools & Accessories</a> </span>
+      <span
+        ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+      ></span>
+      <div class="submenu submenu-1">
+        <ul>
+          <li>Brushes(1)</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <span> <a href="#"> Cosmetics Brush Type</a> </span>
+      <span
+        ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+      ></span>
+      <div class="submenu sub submenu-1">
+        <ul>
+          <li>Lip(1)</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <span> <a href="#"> Eyes Products</a> </span>
+      <span
+        ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+      ></span>
+      <div class="submenu sub submenu-1">
+        <ul>
+          <li>Eyeshadows(1)</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <span> <a href="#">Lip Products </a> </span>
+      <span
+        ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+      ></span>
+      <div class="submenu sub submenu-1">
+        <ul>
+          <li>Lipsticks(52)</li>
+          <li>Lip Stain & Tint(5)</li>
+          <li>Lip Gloss(4)</li>
+          <li>Liquid Lipstick(3)</li>
+          <li>Tinted Lip Balm(3)</li>
+          <li>Lip Liner(2)</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <span> <a href="#"> Preferences</a> </span>
+      <span
+        ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+      ></span>
+      <div class="submenu sub submenu-1 submenu-2">
+        <ul>
+          <li>Certified Organic(6)</li>
+          <li>Cruelty Free (7)</li>
+          <li>Fragrance Free (8)</li>
+          <li>Gluten Free (7)</li>
+          <li>Hydrocortisone Free (6)</li>
+          <li>Mineral Based (6)</li>
+          <li>Non-Comedogenic (6)</li>
+          <li>Paraben Free (7)</li>
+          <li>PEG Free (6)</li>
+          <li>Phthalate Free (8)</li>
+          <li>SLS Free (6)</li>
+          <li>Suitable for Pregnant Women (6)</li>
+          <li>Sulfate Free (6)</li>
+          <li>Vegan (8)</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <span> <a href="#"> Prices</a> </span>
+      <span
+        ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+      ></span>
+      <div class="submenu sub submenu-1">
+        <ul>
+          <li>Price Range Selected</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <span> <a href="#"> Savings</a> </span>
+      <span
+        ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+      ></span>
+      <div class="submenu sub submenu-1">
+        <ul>
+          <li>25%-50%(3)/li></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <span> <a href="#"> Average Reviews</a> </span>
+      <span
+        ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+      ></span>
+      <div class="submenu sub submenu-1">
+        <ul>
+          <li>4+(1)</li>
+        </ul>
+      </div>
+    </li>
+  </div>
+  <div class="line"></div>
+  <div id="productDisplay"></div>
+
+
+
+
+
+
+<!-- -------------------------footer-------------------------------- -->
+
+
+<footer>
+  <hr>
+  <div class="footer-wrap">
+   
+      <div class="container-xxl first_class  item-align-center text-align-center">
+          <div class="row">
+              <div class="col-md-7 col-sm-12">
+                  <h3>Sign up to our email list and receive 20% off your next order</h3>
+                  <button type="button" class="btn">SIGN UP</button>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                  <div class="col-md-12 col-sm-12">
+                      <h3>Connect with us</h3>
+                  </div>
+                  <div class="standard_social_links">
+                   <div>
+                       <li class="round-btn btn-facebook"><a href="#"><i class="fa fa-facebook-f"></i></a>
+
+                       </li>
+                       <li class="round-btn btn-instagram"><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+             
+                       </li>
+                      
+                       <li class="round-btn btn-twitter"><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+             
+                       </li>
+                       <li class="round-btn btn-pinterest"><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></i></a>
+             
+                       </li>
+                       <li class="round-btn btn-snapchat"><a href="#"> <i class='fa fa-snapchat-ghost'></i></a>
+             
+                       </li>
+                   </div>
+                 </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="second class">
+          <div class="container-xxl mt-3">
+              <div class="row">
+               <div class=" col-md-4 col-sm-12 ">
+                 <hr>
+                   <h3>Help & Information</h3>
+                   <ul class="footer-links">
+                     <li><i class="fa fa-phone" ></i><a href="#">Customer Service</a>
+                     </li>
+                     <li><i class="fa fa-truck" aria-hidden="true"></i><a href="#">Delivery Information</a>
+                     </li>
+                     <li><i class="fa fa-refresh" aria-hidden="true"></i><a href="#">
+                       Returns & Refunds</a>
+                     </li>
+                     <li><i class="fa fa-question" aria-hidden="true"></i><a href="#">Help Center</a>
+                     </li>
+                     <li><a href="#" target="_blank">COVID-19 Information</a>
+                     </li>
+                     <li><a href="#" target="_blank">Accessibility</a>
+                     </li>
+                    
+                   </ul>
+           
+               </div>
+                  <div class="col-md-3 col-sm-12">
+                    <hr>
+                   <h3 >About SkinStore</h3>
+                   <ul class="footer-category">
+                     <li><a href="#">About Us</a>
+                     </li>
+                     <li><a href="#">Affiliate Program </a>
+                     </li>
+                     <li><a href="#">Brand Directory</a>
+                     </li>
+                     <li><a href="#">Coupon Codes</a>
+                     </li>
+                     <li><a href="#">Refer A Friend</a>
+                     </li>
+                     <li><a href="#">Student Discount</a>
+                     </li>
+                     <li><a href="#">Join SkinStore Experts</a>
+                     </li>
+                   </ul>
+                   <div class="clearfix"></div>
+                  </div>
+                  <div class="col-md-2 col-sm-12">
+                    <hr>
+                   <h3 style="padding-left: 5px;">Legal</h3>
+                   <ul class="footer-category">
+                     <li><a href="#">Cookie Information</a>
+                     </li>
+                     <li><a href="#">Privacy Policy </a>
+                     </li>
+                     <li><a href="#">Terms & Conditions</a>
+                     </li>
+                     <li><a href="#">Modern Slavery Statement</a>
+                     </li>
+                   
+                   </ul>
+                   <div class="clearfix"></div>
+                  </div>
+                  <div class="col-md-3 col-sm-12 ">
+                    <hr>
+                   <h3 style="padding-left: 15px;">How To Contact Us</h3>
+                   <ul class="footer-links">
+                     <li><a href="#">Message Us</a>
+                     </li>
+         
+                     <li><a href="#">Free Beauty Consultations</a>
+                     </li>
+                   </ul>
+                 </div>
+              </div>
+          </div>
+      </div>
+      <hr>
+      <div class="container">
+      <div class="row">
+       <div  class="footerr col-md-6 col-sm-12 order-2 order-lg-1">
+           <h1>THG</h1>
+           <p>2022 © The Hut.com Ltd</p>
+       </div>
+       <div class="col-md-6 col-sm-12 order-1 order-lg-2">
+           <p>Pay securely with</p>
+           <div class="footer-brand-logos">
+
+            <!-- TOPSHOP -->
+            <a href="/webapp/wcs/stores/servlet/en/thebay/brand/TOPSHOP/womens-apparel">
+                <img src="/image/Visa.png" alt="TOPSHOP">
+            </a>
+          
+            <!-- TOPMAN -->
+            <a href="/webapp/wcs/stores/servlet/en/thebay/brand/TOPMAN">
+                <img src="/image/master.jpg  " alt="TOPMAN">
+            </a>
+          
+            <a href="/webapp/wcs/stores/servlet/en/thebay/brand/TOPMAN">
+             <img src="/image/amex.png  " alt="TOPMAN">
+         </a>
+
+         <a href="/webapp/wcs/stores/servlet/en/thebay/brand/TOPMAN">
+           <img src="/image/dinerclub.jpeg  " alt="TOPMAN">
+       </a>
+
+       <a href="/webapp/wcs/stores/servlet/en/thebay/brand/TOPMAN">
+         <img src="/image/discover.jpg  " alt="TOPMAN">
+     </a>
+
+     <a href="/webapp/wcs/stores/servlet/en/thebay/brand/TOPMAN">
+       <img src="/image/maestro.png " alt="TOPMAN">
+   </a>
+
+   <a href="/webapp/wcs/stores/servlet/en/thebay/brand/TOPMAN">
+     <img src="/image/paypal.png  " alt="TOPMAN">
+ </a>
+
+ <a href="/webapp/wcs/stores/servlet/en/thebay/brand/TOPMAN">
+   <img src="/image/alipay-logo-cover.jpg  " alt="TOPMAN">
+</a>
+
+<a href="/webapp/wcs/stores/servlet/en/thebay/brand/TOPMAN">
+ <img src="/image/wechatpay.png" alt="TOPMAN">
+</a>
+
+<a href="/webapp/wcs/stores/servlet/en/thebay/brand/TOPMAN">
+<img src="/image/Afterpay.jpeg " alt="TOPMAN">
+</a>
+
+<a href="/webapp/wcs/stores/servlet/en/thebay/brand/TOPMAN">
+<img src="/image/zip.png" alt="TOPMAN">
+</a>
+
+<a href="/webapp/wcs/stores/servlet/en/thebay/brand/TOPMAN">
+<img src="/image/sezzal.png  " alt="TOPMAN">
+</a>
+
+<a href="/webapp/wcs/stores/servlet/en/thebay/brand/TOPMAN">
+<img src="/image/mode.jpeg  " alt="TOPMAN">
+</a>
+           
+          </div>
+       </div>
+       </div>
+      </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>
+
+<script src="/js/mousturizer.js"></script>
