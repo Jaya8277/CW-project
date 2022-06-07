@@ -1,6 +1,4 @@
-# SkinStore
- Purchase Skin Product
- A website where we can buy all types of skincare and makeup products, It’s a website where you can buy a lot of skincare products, beauty products which will enhance your skin. The product available on this website is not only for girls but for men as well.
+# SkinStore Purchase Skin Product A website where we can buy all types of skincare and makeup products, It’s a website where you can buy a lot of skincare products, beauty products which will enhance your skin. The product available on this website is not only for girls but for men as well.
 
 <h1>SkinStore Clone</h1>
  <h2>Landing Page</h2>
