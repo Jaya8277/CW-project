@@ -1,0 +1,165 @@
+      *{
+          font-family: Lato;
+      }
+      .body{
+           padding: 30px;
+       }
+        .heading {
+            font-family:"Lato";
+            font-size: 35px;
+            margin-left: 30px;
+        }
+        .box2{
+            padding-left: 15px;
+        }
+.cartt{
+    margin-left: 100px;
+}
+        table{
+            width:900px;
+        }
+        .bar{
+            height: 40px;;
+            width: 100%;
+            background-color: #2E3337;
+            color: white;
+            margin: auto;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .p {
+            font-family: tahoma;
+            font-size: 20px;
+            color: blue;
+            border: 1px solid blue;
+            margin: 10px;
+            background-color: rgb(219, 248, 238);
+            font-weight: bold;
+        }
+        .p1{
+           font-family: tahoma;
+            font-size: 20px;
+            color:green;
+            border: 1px solid green;
+            margin: 10px;
+            background-color: rgb(219, 248, 238);
+            font-weight: bold;
+        }
+
+        .box1 {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .btn1 {
+            background-color: #2E3337;
+            color: wheat;
+            font: bold;
+            margin: 20px;
+            font-size: 20px;
+            height: 50px;
+
+        }
+
+        .btn1:hover {
+            cursor: pointer;
+            color: white;
+        }
+
+        .a>img {
+            height: 100px;
+            width: 100px;
+
+        }
+
+        .a {
+            display: flex;
+            margin: 10px;
+            background-color: white;
+        }
+
+        .box3 {
+            pointer-events: none;
+            
+            background-color: #b4bcc477;
+            width: 420px;
+            justify-content: center;
+            height: 60%;
+            margin-right: 30pxpx;
+            margin-right: 10%;
+        }
+    .head{
+       padding-left: 15px;
+    }
+        .total {
+            display: flex;
+            /* justify-content: space-between; */
+            justify-content: space-around;
+            
+        }
+
+        .coupon {
+            /* background-color: #2E3337; */
+            margin-left: 30%;
+                    
+        
+        }
+        .coupon>input{
+            height: 40px;
+            width:50%;
+            font-size: large;
+        }
+        .coupon>button{
+            height: 44px;
+            
+        }
+        .btns{
+            color:white;
+            display: flex;
+            justify-content: space-between;
+        }
+        .pay{
+            display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+        }
+        .pay>svg{
+            cursor: pointer;
+            margin: 10px;
+            padding: 10px;
+        }
+            
+    
+
+
+
+
+
+
+
+
+
+        @media (min-width: 500px) and (max-width: 1050px) {
+
+            .container{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+        }
+        
+
+         }
+
+         #flex{
+             display: flex;
+             margin: 5px;
+         }
+/* tbody>tr>th{ */
+    /* margin: ; */
+/* } */

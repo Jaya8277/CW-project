@@ -1,0 +1,159 @@
+#nav{
+    margin-left: 100px;
+}
+#topImg{
+           
+    height: 430px;
+  width: 1360px;
+ 
+}
+#img1{
+  height: 430px;
+  width: 1330px;
+  margin-left: 90px;
+ 
+}
+#img2{
+  position: relative;
+  height: 100px;
+  width: 330px;
+  margin-left: 160px;
+  margin-top: 150px;
+}
+#firstheaing>h1{
+  margin-left: 570px;
+}
+#shopRange{
+  display: grid;
+ 
+ 
+  grid-template-columns:repeat(3,400px);
+  grid-template-rows: 500px;
+  justify-content: space-evenly;
+ 
+}
+
+.rangeimg{
+  width: 398px;
+  height: 340px;
+}
+.rangeFooter>div{
+  justify-content: center;
+  text-align: center;
+}
+#aboutBrand{
+  display: flex;
+  gap: 30px;
+  margin-top: 27px;
+  
+  
+}
+#aboutBrand>div img{
+  height: 375px;
+  width: 610px;
+  margin-left: 35px;
+}
+#AesopFavoritesProducts{
+  display:grid;
+  grid-template-columns: repeat(4,300px);
+  justify-content: space-evenly;
+  
+  
+  
+}
+button{
+  background-color: #2E3337;
+  height: 37px;
+  color: white;
+  margin-left: 10px;
+}
+#AesopFavoritesProducts>div{
+  
+  text-align: center;
+  box-sizing: border-box;
+}
+.aesop>img{
+  height: 300px;
+  width: 300px;
+}
+#btnShopNowAesop{
+  display: flex;
+  height: 40px;
+  
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.808);
+}
+#btnShopNowAesop:hover{
+    background-color: rgb(131, 246, 246);
+    
+}
+#btnShopNowAesop>div{
+  color:black;
+ margin-top: 7px;
+}
+
+#icon{
+  color: white;
+
+  
+}
+#shopnow{
+  color: white;
+}
+#AesopFavorites>h1{
+  text-align: center;
+  color: black
+}
+#fiximg{
+  height: 50x;
+  width: 100px;
+  position: relative;
+  margin-top: -300px;
+}
+#name,#price{
+  font-size: 17px;
+  
+  font-family: 'Lato', sans-serif;
+
+  font-weight:100;
+  /* color: #141414; */
+  color: black;
+}
+div>h4{
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.911);
+  font-family: 'Lato', sans-serif;
+}
+div>p{
+  font-size: 14px;
+}
+.ps{
+  width:100px;
+  margin-left: 150px;
+  border: 1px solid #2E3337;
+}
+
+.ps:hover{
+  background-color:#C4F9E7;
+}
+
+#saidepara>p{
+  font-size: 15px;
+}
+#shopNowBtn{
+  position: relative;
+  height: 45px;
+  width: 95px;
+  border: none;
+  background-color: white;
+  color: #2E3337;
+  box-shadow: white;
+  margin-top: 10px;
+  margin-left: 150px;
+  font-family: "Lato";
+}
+#shopNowBtn:hover{
+  background-color: whitesmoke;
+}
